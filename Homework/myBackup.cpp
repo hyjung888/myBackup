@@ -23,14 +23,14 @@ int main(int argc, char* argv[]) {
 	wchar_t logDir[BUFSIZ];
 	//logHandle=CreateFile(logDir, GENERIC_READ | GENERIC_WRITE, 0, NULL, CREATE_ALWAYS, 0, NULL);
 	ofstream fout("myBackup.log");
-	argc = 3;
+	//argc = 3;
 	if (argc != 3) {
 		cout << "입력 인자갯수가 잘못되었습니다" << endl;
 		return -1;
 	}
 
-	argv[1] = "C:\\asd\\1.txt";
-	argv[2] = "C:\\asd\\2";
+	//argv[1] = "C:\\asd\\1.txt";
+	//argv[2] = "C:\\asd\\2";
 
 	CharToWChar(argv[1], oldDir);
 	CharToWChar(argv[2], newDir);
